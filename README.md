@@ -34,7 +34,16 @@ conda activate summary
 ### STEP 02- install the requirements
 
 ```bash
+# Install Pytorch version as per your need and device requirements
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# Install the requirements
 pip install -r requirements.txt
+
+# Install some other packages
+pip install --upgrade accelerate
+pip uninstall -y transformers accelerate
+pip install transformers accelerate
 ```
 
 ```bash
